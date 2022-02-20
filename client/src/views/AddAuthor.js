@@ -28,7 +28,7 @@ export default () => {
     <div>
       <h2>Add a new author</h2>
       {errors.map((err, index) => (
-        <p className="p-3 mb-2 bg-danger text-white col-3 m-auto" key={index}>
+        <p className="p-3 mb-2 bg-danger text-white col-5 m-auto" key={index}>
           {err}
         </p>
       ))}

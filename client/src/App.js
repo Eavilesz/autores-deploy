@@ -10,9 +10,9 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <h1 className="text-white bg-dark col-3 m-auto">Favourite Authors</h1>
+        <h1 className="text-white bg-dark col-5  m-auto">Favourite Authors</h1>
         <Routes>
-          <Route path="author/" element={<Main />} />
+          <Route path="/" element={<Main />} />
           {/* <Route path="product/:id" element={<Detail />} /> */}
           <Route path="author/:id/edit" element={<Update />} />
           <Route path="author/add" element={<AddAuthor />} />

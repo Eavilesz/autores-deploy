@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from "axios";
+
 import { useNavigate } from "react-router-dom";
 
 export default (props) => {
@@ -18,7 +18,7 @@ export default (props) => {
   //onChange to update name
   return (
     <form onSubmit={onSubmitHandler}>
-      <div className="form-floating mb-3 col-3 m-auto">
+      <div className="form-floating mb-3 col-5 m-auto">
         <input
           type="text"
           className="form-control"
@@ -32,7 +32,7 @@ export default (props) => {
       <button
         type="button"
         className="btn btn-outline-danger"
-        onClick={(e) => navigate("/author/")}
+        onClick={(e) => navigate("/")}
       >
         Cancel
       </button>
